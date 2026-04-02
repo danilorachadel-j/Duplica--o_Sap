@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replicação Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="bloco-01">
@@ -10,6 +11,38 @@
 
         </div>
     </section>
-    
+    <div class="card-pedidos">
+        <div class="header">
+            <h2> Status de de pedidos recentes</h2>
+            <div class="header-right">
+                <div class="#">Ver todos os pedidos</div>
+                <button class="btn-add">+</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N°Req.</th>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th class="text-right"></th>
+                </tr>
+            </thead>
+            <body>
+                <tr class="linha pedido"></tr>
+                <td> # 125</td>
+                <td>20/04/2020</td>
+                <td>R$1.250,00</td>
+                <td class="text-right"><span class="status processado">Processado</span></td>
+                <tr class="linha-pedido">
+                    <td> # 125</td>
+                <td>20/04/2020</td>
+                <td>R$1.250,00</td>
+                <td class="text-right"><span class="status processado">Processado</span></td>
+                </tr>
+            </body>
+        </table>
+    </div>
 </body>
 </html>
