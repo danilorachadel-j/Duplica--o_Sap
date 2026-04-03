@@ -53,7 +53,7 @@ body {
 table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 12px; /* Cria o espaço entre os cartões brancos */
+    border-spacing: 0 12px; 
 }
 
 th {
@@ -67,14 +67,13 @@ th {
     text-align: right;
 }
 
-/* Linhas Brancas */
 .linha-pedido {
     background-color: white;
     transition: transform 0.2s;
 }
 
 .linha-pedido:hover {
-    transform: scale(1.01); /* Efeito simples de foco */
+    transform: scale(1.01); 
 }
 
 .linha-pedido td {
@@ -99,5 +98,100 @@ th {
 .processado { background-color: #5cb85c; }
 .analise    { background-color: #f0ad4e; }
 .cancelado  { background-color: #d9534f; }
+
+background-color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #0047ab;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-carousel, .mini-product-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: hidden;
+}
+
+.product-card {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+
+.img-box {
+    height: 60px;
+    background: #f0f0f0;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.product-card p {
+    font-size: 11px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.product-card strong {
+    font-size: 12px;
+    color: #0047ab;
+}
+
+.msg-item {
+    background: white;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    background: #ffcc80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.msg-info strong { font-size: 13px; display: block; }
+.msg-info p { font-size: 11px; margin: 0; color: #666; }
+
+.status-row {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e0e0e0;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 10px;
+    color: #0047ab;
+}
 
 
